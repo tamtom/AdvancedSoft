@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/roundedpurble"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ImageView
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/icon_ethankyou"
+        android:layout_margin="8dp"
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <View
+        android:id="@+id/divider"
+        app:layout_constraintTop_toTopOf="@id/icon"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/icon"
+        android:layout_marginStart="4dp"
+        app:layout_constraintStart_toEndOf="@id/icon"
+        android:layout_width="2dp"
+        android:layout_height="16dp"/>
+    <TextView
+        android:textColor="@color/white"
+        android:id="@+id/title"
+        app:layout_constraintBottom_toBottomOf="@id/divider"
+        app:layout_constraintTop_toTopOf="@id/divider"
+        app:layout_constraintStart_toEndOf="@id/divider"
+        tools:text=" THANK YOU "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        tools:text="40"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icon"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
