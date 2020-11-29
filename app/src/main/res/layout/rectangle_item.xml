@@ -25,6 +25,7 @@
     <TextView
         android:textColor="@color/white"
         android:id="@+id/title"
+        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="@id/divider"
         app:layout_constraintTop_toTopOf="@id/divider"
         app:layout_constraintStart_toEndOf="@id/divider"

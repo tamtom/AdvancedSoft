@@ -48,8 +48,14 @@ class DashBoardViewModel(private val homeRepo: HomeRepo) : BaseViewModel() {
                 response.certSection.total_cert, R.drawable.icon_certificate
             )
         )
-        //uiList.add(DashBoardUiModel.GiftUi(response.giftsSection))
-        //uiList.add(DashBoardUiModel.KeyUi(response.keySectionSection))
+        uiList.add(  DashBoardUiModel.BoxSection(
+            "Gift", response.giftsSection.received_gifts, response.giftsSection.sent_gifts,
+            response.giftsSection.total_gifts, R.drawable.icon_gift
+        ))
+        uiList.add(DashBoardUiModel.BoxSection(
+            "Keys", response.keySectionSection.received_received_key, response.keySectionSection.sent_sent_key,
+            response.keySectionSection.total_total_key, R.drawable.icon_ekey
+        ))
         return uiList
     }
 
